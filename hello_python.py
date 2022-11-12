@@ -1,7 +1,7 @@
-print("Hi,Guys this is ARYA")
-print("A.Arya\tAlagappan \n A210 Shri Harihar Enclave \n Old Natham road \n Madurai 625014")
-a=5
-b=8
+print("Hi,Guys this is ARYA \n")
+print("\tA.Arya Alagappan, \n A210 Shri Harihar Enclave, \n Old Natham road, \n Madurai 625014.")
+a=25
+b=12
 print(a+b)
 print(a-b)
 print(a*b)
