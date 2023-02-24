@@ -36,4 +36,5 @@ if button_clicked:
     # st.write(dict)
     df = pd.DataFrame.from_dict(dict)
     st.write(df)
+    df.to_excel(r'C:\data.xlsx')
 
