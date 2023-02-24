@@ -35,16 +35,7 @@ if button_clicked:
         'Your State is': state,
         'Your Pin Code is': pin_code
     }
-    dict = {
-        'Your Name Is': [name],
-        'Your Phone Number Is': [phone],
-        'Your DOB Is': [dob],
-        'Your Blood Group Is': [b_grp],
-        'Your Street is': [street],
-        'Your City is': [city],
-        'Your State is': [state],
-        'Your Pin Code is': [pin_code]
-    }
+
     st.write(dict)
 
 
