@@ -25,9 +25,9 @@ if button_clicked:
     # st.write(f"Your date of birth is: {dob}")
     # st.write("Your selected blood group is:", b_grp)
     dict = {
-        'Name': {name},
-        'Phone': {phone},
-        'DOB': {dob},
+        'Name': name,
+        'Phone': phone,
+        'DOB': dob,
         'bld_grp': b_grp
     }
     st.write(dict)
