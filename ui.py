@@ -8,10 +8,12 @@ st.set_page_config(page_title="My Streamlit App")
 st.title("Welcome to my Streamlit App")
 
 blood_groups = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-']
+min_date = datetime(1940, 1, 1)
+max_date = datetime(2040, 12, 31)
 
 name = st.text_input("Please Enter Your Name:")
 phone = st.text_input("Please Enter Your Phone Number:")
-dob = st.date_input("Enter your date of birth", datetime())
+dob = st.date_input("Enter your date of birth", min_value=min_date, max_value=max_date)
 b_grp = st.selectbox("Select your blood group", blood_groups)
 street = st.text_input("Street")
 city = st.text_input("City")
