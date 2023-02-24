@@ -6,8 +6,12 @@ st.set_page_config(page_title="My Streamlit App")
 # Add a title to the app
 st.title("Welcome to my Streamlit App")
 
-# Add a slider to the app
-value = st.slider("Select a value", 0, 100)
+# Add a text box to the app
+user_input = st.text_input("Enter your name:")
 
-# Display the value
-st.write("You selected:", value)
+# Add a button to the app
+button_clicked = st.button("Submit")
+
+# Display a message if the button is clicked
+if button_clicked:
+    st.write(f"Hello, {user_input}!")
