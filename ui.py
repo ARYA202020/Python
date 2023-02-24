@@ -1,3 +1,4 @@
+import pandas as pd
 import streamlit as st
 
 from datetime import datetime
@@ -32,5 +33,7 @@ if button_clicked:
         'Your State is': state,
         'Your Pin Code is': pin_code
     }
-    st.write(dict)
+    # st.write(dict)
+    df = pd.DataFrame(dict)
+    st.write(df)
 
