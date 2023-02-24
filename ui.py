@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 from datetime import datetime
 # Set page title
 st.set_page_config(page_title="My Streamlit App")
@@ -31,3 +32,5 @@ if button_clicked:
         'bld_grp': b_grp
     }
     st.write(dict)
+    df = pd.DataFrame(dict)
+    df.to_excel('C:\data.xlsx')
