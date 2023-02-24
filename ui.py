@@ -1,5 +1,4 @@
 import pandas as pd
-import openpyxl
 import streamlit as st
 
 from datetime import datetime
@@ -37,5 +36,5 @@ if button_clicked:
     # st.write(dict)
     df = pd.DataFrame.from_dict(dict)
     st.write(df)
-    # df.to_csv(r'C:\data.xlsx', index=False)
+    df.to_csv(r'C:\data.xlsx', index=False)
 
