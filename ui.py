@@ -11,7 +11,7 @@ blood_groups = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-']
 
 name = st.text_input("Please Enter Your Name:")
 phone = st.text_input("Please Enter Your Phone Number:")
-dob = st.date_input("Enter your date of birth", datetime.today())
+dob = st.date_input("Enter your date of birth", datetime())
 b_grp = st.selectbox("Select your blood group", blood_groups)
 street = st.text_input("Street")
 city = st.text_input("City")
