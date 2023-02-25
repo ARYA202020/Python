@@ -35,6 +35,5 @@ if button_clicked:
         'Your Pin Code is': [pin_code]
     }
 
-    df=pd.DataFrame(dict)
-    df.to_csv('data.csv')
+
     st.write(dict)
