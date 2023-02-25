@@ -3,8 +3,7 @@ import streamlit as st
 
 from datetime import datetime
 
-st.set_page_config(page_title="My Streamlit App")
-
+st.set_page_config(page_title="Arya's App")
 st.title("Welcome to Arya's App")
 
 blood_groups = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-']
