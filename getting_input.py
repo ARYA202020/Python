@@ -25,15 +25,16 @@ button_clicked = st.button("Submit")
 if button_clicked:
 
     dict = {
-        'Your Name Is': name,
-        'Your Phone Number Is': phone,
-        'Your DOB Is': dob,
-        'Your Blood Group Is': b_grp,
-        'Your Street is': street,
-        'Your City is': city,
-        'Your State is': state,
-        'Your Pin Code is': pin_code
+        'Your Name Is': [name],
+        'Your Phone Number Is': [phone],
+        'Your DOB Is': [dob],
+        'Your Blood Group Is': [b_grp],
+        'Your Street is': [street],
+        'Your City is': [city],
+        'Your State is': [state],
+        'Your Pin Code is': [pin_code]
     }
 
-
+    df=pd.DataFrame(dict)
+    df.to_csv('data.csv')
     st.write(dict)
