@@ -35,5 +35,4 @@ if button_clicked:
         'Your Pin Code is': pin_code
     }
 
-
     st.write(dict)
