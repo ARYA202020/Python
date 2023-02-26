@@ -30,11 +30,11 @@ pin_code = st.text_input("Pin Code")
         'Your State is': [state],
         'Your Pin Code is': [pin_code]
     }
+    df = pd.dataFrame(data)
 
 if st.button("Save Data"):
-    df = pd.dataFrame(data)
-    df.to_csv("data.csv", index=False)
 
+    df.to_csv("data.csv", index=False)
     st.write("Data saved ")
 
     st.write(df)
