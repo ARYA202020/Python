@@ -22,17 +22,22 @@ pin_code = st.text_input("Pin Code")
 
 button_clicked = st.button("Submit")
 
-if button_clicked:
+if st.button("Save Data"):
 
-    dict = {
-        'Your Name Is': name,
-        'Your Phone Number Is': phone,
-        'Your DOB Is': dob,
-        'Your Blood Group Is': b_grp,
-        'Your Street is': street,
-        'Your City is': city,
-        'Your State is': state,
-        'Your Pin Code is': pin_code
+    data = {
+        'Your Name Is': [name],
+        'Your Phone Number Is': [phone],
+        'Your DOB Is': [dob],
+        'Your Blood Group Is': [b_grp],
+        'Your Street is': [street],
+        'Your City is': [city],
+        'Your State is': [state],
+        'Your Pin Code is': [pin_code]
     }
+    df = pd.dataFrame(data)
+    df.to_csv("data.csv", index=False)
 
-    st.write(dict)
+    st.write("Data saved to file!")
+
+    st.write(df)
+    # st.write(dict)
