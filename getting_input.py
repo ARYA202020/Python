@@ -20,10 +20,6 @@ state = st.text_input("State")
 pin_code = st.text_input("Pin Code")
 
 
-button_clicked = st.button("Submit")
-
-if st.button("Save Data"):
-
     data = {
         'Your Name Is': [name],
         'Your Phone Number Is': [phone],
@@ -34,10 +30,12 @@ if st.button("Save Data"):
         'Your State is': [state],
         'Your Pin Code is': [pin_code]
     }
+
+if st.button("Save Data"):
     df = pd.dataFrame(data)
     df.to_csv("data.csv", index=False)
 
-    st.write("Data saved to file!")
+    st.write("Data saved ")
 
     st.write(df)
     # st.write(dict)
