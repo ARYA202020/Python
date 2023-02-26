@@ -19,6 +19,7 @@ city = st.text_input("City")
 state = st.text_input("State")
 pin_code = st.text_input("Pin Code")
 
+if st.button("Save Data"):
 
     data = {
         'Your Name Is': [name],
@@ -32,7 +33,7 @@ pin_code = st.text_input("Pin Code")
     }
     df = pd.dataFrame(data)
 
-if st.button("Save Data"):
+
 
     df.to_csv("data.csv", index=False)
     st.write("Data saved ")
