@@ -48,7 +48,6 @@ class AryaFinance():
 #     tran_type = args.Transaction_type
 #     AryaFinance(date, amount, tran_type, comments).load_transaction()
 
-
 if __name__ == '__main__':
     date = input("Please Enter the Date of transaction ")
     amount = input("Please Enter the Amount")
